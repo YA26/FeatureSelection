@@ -16,22 +16,22 @@
   
   - **Pearson's correlation coefficient:** Correlations between numerical variables
   
-  ![alt_text](corrcoef.jpg)
+  ![alt_text](img/corrcoef.jpg)
   ![alt_text](corrcoefmatrix.png)
  
   - **Cramer's V**: Cramer's V between categorical variables
   
-  ![alt_text](cramersv.jpg)
-  ![alt_text](cramersvmatrix.png)
+  ![alt_text](img/cramersv.jpg)
+  ![alt_text](img/cramersvmatrix.png)
   
   - **Theil's U/Entropy coefficient/Uncertainty coefficient**: Assymetric measure calculated for pairs of categorical variables
   
-  ![alt_text](theilsu.jpg)
-  ![alt_text](theilsumatrix.png)
+  ![alt_text](img/theilsu.jpg)
+  ![alt_text](img/theilsumatrix.png)
   
   - **Out-of-bag score**: Assymetric measure computed with a random forest. It is useful to detect both linear and non-linear relationships between all kind of variables
   
-  ![alt_text](outofbagscore.png)
+  ![alt_text](img/outofbagscore.png)
 
 ## Coding example:
 ```python
