@@ -12,7 +12,7 @@
 ## Four metrics available:
   The following metrics have been calculated on this dataset:
   
-  ![alt_text](data.jpg) 
+  ![alt_text](img/data.jpg) 
   
   - **Pearson's correlation coefficient:** Correlations between numerical variables
   
