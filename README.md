@@ -1,4 +1,16 @@
-#Feature_selection
+# FeatureSelector: Automatically computing correlations and associations metrics 
+## Four metrics available:
+  The following metrics have been calculated on this dataset:
+  
+  ![alt_text](data.jpg) 
+  - **Pearson's correlation coefficient:** Correlations between numerical variables(which are automatically detected)
+  
+  
+  - **Cramer's V**: Cramer's V between categorical variables(which are automatically detected)
+  
+  - **Theil's U/Entropy coefficient/Uncertainty coefficient**: Assymetric metric calculated for pairs of categorical variables(which are automatically detected)
+  
+  - **Out-of-bag score**: Assymetric metric computed with a random forest. It is useful to detect both linear and non-linear relationships between all kind of variables(categorial and numerical)
 
 ```python
 from pandas import read_csv
