@@ -13,10 +13,10 @@ import pandas as pd
 class FeatureSelector():
     """
     Feature selection with:
-        Symmetric metric:
+        Symmetric measures:
             - Pearson coefficient of correlation(for numerical variables)
             - Cramers' V(for categorical variables)
-        Assymmetric metric:
+        Assymmetric measures:
             - Entropy coefficient(for categorical variables)
             - Out-of-bag score(for both variable types)        
     """
