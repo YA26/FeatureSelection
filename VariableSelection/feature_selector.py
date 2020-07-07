@@ -337,32 +337,32 @@ class FeatureSelector():
         """
         Parameters
         ----------
-        additional_estimators : TYPE, optional
-            DESCRIPTION. The default is 20.
-        n_estimators : TYPE, optional
-            DESCRIPTION. The default is 30.
-        max_depth : TYPE, optional
-            DESCRIPTION. The default is None.
-        min_samples_split : TYPE, optional
-            DESCRIPTION. The default is 20.
-        min_samples_leaf : TYPE, optional
-            DESCRIPTION. The default is 20.
-        min_weight_fraction_leaf : TYPE, optional
-            DESCRIPTION. The default is 0.0.
-        max_features : TYPE, optional
-            DESCRIPTION. The default is None.
-        max_leaf_nodes : TYPE, optional
-            DESCRIPTION. The default is None.
-        min_impurity_decrease : TYPE, optional
-            DESCRIPTION. The default is 0.0.
-        min_impurity_split : TYPE, optional
-            DESCRIPTION. The default is None.
-        n_jobs : TYPE, optional
+        additional_estimators : int, optional
+            The default is 20.
+        n_estimators : int, optional
+            The default is 30.
+        max_depth : int, optional
+            The default is None
+        min_samples_split : int, optional
+            The default is 20.
+        min_samples_leaf : int, optional
+            The default is 20.
+        min_weight_fraction_leaf : float, optional
+            The default is 0.0.
+        max_features : str, optional
+            The default is 'auto'.
+        max_leaf_nodes : int, optional
+            The default is None
+        min_impurity_decrease : float, optional
+            The default is 0.0.
+        min_impurity_split : float, optional
+            The default is None
+        n_jobs : int, optional
             DESCRIPTION. The default is -1.
-        random_state : TYPE, optional
-            DESCRIPTION. The default is None.
-        verbose : TYPE, optional
-            DESCRIPTION. The default is 0.
+        random_state : int, optional
+            DESCRIPTION. The default is None
+        verbose : int, optional
+            The default is 0.
 
         Returns
         -------
