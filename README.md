@@ -3,6 +3,12 @@
 - It is accessible via **```pip install VariableSelection```**
 - Variables types are **automatically detected**(categorical and numerical)
 
+# Dependencies
+- Python(version>=3.6)
+- DataTypeIdentifier
+- scikit-learn
+- seaborn
+
 ## Four metrics available:
   The following metrics have been calculated on this dataset:
   
