@@ -4,7 +4,8 @@
   
   ![alt_text](data.jpg) 
   - **Pearson's correlation coefficient:** Correlations between numerical variables(which are automatically detected)
-  
+  ![alt_text](corrcoef.jpg)
+  ![alt_text](corrcoefmatrix.png)
   
   - **Cramer's V**: Cramer's V between categorical variables(which are automatically detected)
   
