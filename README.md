@@ -10,6 +10,7 @@ FeatureSelector is a library useful to check whether two distributions are corre
   ![alt_text](corrcoefmatrix.png)
  
   - **Cramer's V**: Cramer's V between categorical variables
+  
   ![alt_text](cramersv.jpg)
   ![alt_text](cramersvmatrix.png)
   
