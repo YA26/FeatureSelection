@@ -3,7 +3,7 @@
 - It is accessible via **```pip install VariableSelection```**
 - Variables types are **automatically detected**(categorical and numerical)
 
-# Dependencies
+## Dependencies
 - Python(version>=3.6)
 - DataTypeIdentifier
 - scikit-learn
