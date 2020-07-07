@@ -1,5 +1,5 @@
 # FeatureSelector: Automatically computing correlations and associations metrics
-FeatureSelector is a library useful to check whether two distributions are correlated or associated. Variables types are automatically detected(categorical and numerical)
+**FeatureSelector** is a library useful to check whether two distributions are correlated or associated. Variables types are **automatically detected**(categorical and numerical)
 
 ## Four metrics available:
   The following metrics have been calculated on this dataset:
