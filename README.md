@@ -17,7 +17,7 @@
   - **Pearson's correlation coefficient:** Correlations between numerical variables
   
   ![alt_text](img/corrcoef.jpg)
-  ![alt_text](corrcoefmatrix.png)
+  ![alt_text](img/corrcoefmatrix.png)
  
   - **Cramer's V**: Cramer's V between categorical variables
   
