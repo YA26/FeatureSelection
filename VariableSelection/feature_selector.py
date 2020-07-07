@@ -5,10 +5,10 @@ from DataTypeIdentifier.data_type_identifier import DataTypeIdentifier
 from sklearn.preprocessing import LabelEncoder
 from seaborn import heatmap
 from scipy import stats as ss
-import FeatureSelection.constants as const
+import VariableSelection.constants as const
 import numpy as np
 import pandas as pd
-import FeatureSelection.constants as const
+
 
 
 class FeatureSelector():

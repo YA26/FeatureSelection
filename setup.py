@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 from distutils.core import setup
 setup(
-  name = 'FeatureSelection',         # How you named your package folder (MyLib)
-  packages = ['FeatureSelection'],   # Chose the same as "name"
+  name = 'VariableSelection',         # How you named your package folder (MyLib)
+  packages = ['VariableSelection'],   # Chose the same as "name"
   version = '0.0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Automatic computing of useful metrics for feature selection',   # Give a short description about your library
