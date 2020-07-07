@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from FeatureSelection.feature_selector import FeatureSelector
+from VariableSelection.feature_selector import FeatureSelector

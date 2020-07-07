@@ -391,8 +391,6 @@ class FeatureSelector():
     
     def show_matrix_graph(self, matrix, title=""):
         """
-        
-
         Parameters
         ----------
         matrix : pandas.core.frame.DataFrame

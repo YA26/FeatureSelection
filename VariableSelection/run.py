@@ -3,7 +3,7 @@ from os.path import join
 from feature_selector import FeatureSelector
 """
 ############################################
-############  MAINN OBJECT  ################
+############  MAIN OBJECT  ################
 ############################################
 """
 data = read_csv(join("data", "loan_approval.csv")) 
@@ -20,7 +20,6 @@ corr_coef_matrix = feature_selector.get_corr_coef_matrix()
 oob_matrix = feature_selector.get_oob_score_matrix(n_estimators=100, 
                                                    additional_estimators=100, 
                                                    min_samples_split=30)
-a=   feature_selector.get_variables_type_predictions()
 """
 ############################################
 ############ MATRICES DISPLAY  #############
