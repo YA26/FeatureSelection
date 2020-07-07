@@ -18,12 +18,12 @@
   ![alt_text](cramersv.jpg)
   ![alt_text](cramersvmatrix.png)
   
-  - **Theil's U/Entropy coefficient/Uncertainty coefficient**: Assymetric metric calculated for pairs of categorical variables
+  - **Theil's U/Entropy coefficient/Uncertainty coefficient**: Assymetric measure calculated for pairs of categorical variables
   
   ![alt_text](theilsu.jpg)
   ![alt_text](theilsumatrix.png)
   
-  - **Out-of-bag score**: Assymetric metric computed with a random forest. It is useful to detect both linear and non-linear relationships between all kind of variables
+  - **Out-of-bag score**: Assymetric measure computed with a random forest. It is useful to detect both linear and non-linear relationships between all kind of variables
   
   ![alt_text](outofbagscore.png)
 
