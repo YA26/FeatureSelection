@@ -29,7 +29,7 @@
   ![alt_text](img/theilsu.jpg)
   ![alt_text](img/theilsumatrix.png)
   
-  - **Out-of-bag score**: Assymetric measure computed with a random forest(classifier or regressor). It is useful to detect both linear and non-linear relationships between all kind of variables
+  - **Out-of-bag score**: Assymetric measure computed with a random forest(classifier or regressor). It is useful to detect both linear and non-linear relationships between all type of variables
   
   ![alt_text](img/outofbagscore.png)
 
