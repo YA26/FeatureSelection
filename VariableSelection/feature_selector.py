@@ -23,14 +23,14 @@ class FeatureSelector():
     def __init__(self, data):
         data_type_identifier = DataTypeIdentifier()
         self.__label_encoder = LabelEncoder()
-        self.__data_copy = data.copy(deep=True)
+        self.__data_copy = data_type_identifier.keep_initial_data_types(data.copy(deep=True))
         self.__predictions = data_type_identifier.predict(data, verbose=0) 
         cat_check = self.__predictions.values == const.CATEGORICAL
         num_check = self.__predictions.values==const.NUMERICAL
-        categorical_variable_names = self.__predictions[cat_check].index
-        numerical_variable_names = self.__predictions[num_check].index
-        self.__categorical_variables = data[categorical_variable_names]
-        self.__numerical_variables = data[numerical_variable_names]
+        self.__categorical_variable_names = self.__predictions[cat_check].index
+        self.__numerical_variable_names = self.__predictions[num_check].index
+        self.__categorical_variables = data[self.__categorical_variable_names]
+        self.__numerical_variables = data[self.__numerical_variable_names]
         
         #Random forest variables
         self.__additional_estimators = None
@@ -50,7 +50,26 @@ class FeatureSelector():
         self.__oob_score = True
         self.__warm_start = True
         
-       
+    
+    def __replace_nan_values(self):
+        """
+        Replaces empty cells with initial values in the features dataset:
+            - mode for categorical variables 
+            - median for numerical variables
+
+        Returns
+        -------
+        None
+        """
+        #Calculating medians and modes
+        medians = self.__data_copy[self.__numerical_variable_names].median()
+        modes = self.__data_copy[self.__categorical_variable_names].mode().iloc[0]
+        new_values = pd.concat([medians, modes])
+
+        #Replacing initial_guesses in the dataset
+        self.__data_copy.fillna(new_values, inplace=True)
+        
+        
     def __encode_feature(self, feature):
         """
         Parameters
@@ -97,6 +116,9 @@ class FeatureSelector():
         -------
         float
         """
+        if self.__data_copy.isnull().any().any():
+            self.__replace_nan_values()
+            
         print(f" TREATING (Feature: {feature.name.upper()}," 
               f" Target: {target.name.upper()})")
         if feature.name != target.name:
