@@ -1,4 +1,4 @@
-# FeatureSelector: Automatically computing correlations and associations metrics
+# FeatureSelector: Automatically computing correlation and association metrics
 - **FeatureSelector** is a library useful to check whether two distributions are correlated or associated. 
 - It is accessible via **```pip install VariableSelection```**
 - Variables types are **automatically detected**(categorical and numerical)
